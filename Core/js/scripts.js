@@ -172,8 +172,8 @@ function display_slides(buttonPressed) {
 		
         $(window).load(function(){
         $(".typing").typed({
-            strings: ["I am a computer engineer.", "I like creating innovative solutions to problems.", "I like helping people.",
-            "I like leading and working in teams.", "I like embedded systems."],    //You can change the home section typing text from
+            strings: ["computer engineering.", "creating innovative solutions to problems.", "helping people.",
+            "leading and working in teams.", "embedded systems."],    //You can change the home section typing text from
             typeSpeed: 30,
             loop: true,
             backDelay: 1500
