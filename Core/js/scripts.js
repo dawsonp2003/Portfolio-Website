@@ -173,7 +173,7 @@ function display_slides(buttonPressed) {
         $(window).load(function(){
         $(".typing").typed({
             strings: ["computer engineering.", "creating innovative solutions to problems.", "helping people.",
-            "leading and working in teams.", "embedded systems."],    //You can change the home section typing text from
+            "leading and working in teams.", "embedded systems."],    //home section typing text
             typeSpeed: 30,
             loop: true,
             backDelay: 1500
@@ -204,29 +204,28 @@ function display_slides(buttonPressed) {
 
         $('.portfolio-popup').magnificPopup({
             type: 'image',
+            closeOnContentClick: true,
 			
             gallery: { enabled: true },
-			zoom: { enabled: true,
-			        duration: 500
-					
-          },
+			zoom: { 
+                enabled: true,
+                duration: 300
+			},
 		  
-         image:{
-               markup: '<div class="mfp-figure portfolio-pop-up">'+
-               '<div class="mfp-close"></div>'+
-               '<div class="mfp-img"></div>'+
-               '<div class="mfp-bottom-bar portfolio_title">'+
-               '<div class="mfp-title"></div>'+
-               '<div class="mfp-counter"></div>'+
-               '</div>'+
-               '</div>',
+            image: {
+                markup: '<div class="mfp-figure portfolio-pop-up">'+
+                '<div class="mfp-close"></div>'+
+                '<div class="mfp-img"></div>'+
+                '<div class="mfp-bottom-bar portfolio_title">'+
+                '<div class="mfp-title"></div>'+
+                '<div class="mfp-counter"></div>'+
+                '</div>'+
+                '</div>',
 
-               titleSrc:function(item){
-                return item.el.attr('title');
-              }
-            }
-		  
-		  
+                titleSrc:function(item){
+                    return item.el.attr('title') + '  |  ' + '<a class="portfolio-button smoth-scroll" href="#about">More</a>';
+                }
+            }		  
           });
 
        
